@@ -1,5 +1,12 @@
 # MCP Clima Desafio
 
+[![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)](https://www.python.org/)
+[![Agno](https://img.shields.io/badge/Agno-Agent-FF4B4B?logo=ai&logoColor=white)](https://github.com/agno-ai/agno)
+[![Groq](https://img.shields.io/badge/Groq-LLM-F55036?logo=groq&logoColor=white)](https://groq.com/)
+[![FastMCP](https://img.shields.io/badge/FastMCP-Server-009688?logo=fastapi&logoColor=white)](https://github.com/jlowin/fastmcp)
+[![uv](https://img.shields.io/badge/uv-Package%20Manager-DE5FE9?logo=python&logoColor=white)](https://github.com/astral-sh/uv)
+[![Open-Meteo](https://img.shields.io/badge/Open--Meteo-Weather%20API-00B0FF?logo=wechat&logoColor=white)](https://open-meteo.com/)
+
 Um projeto Python que demonstra o uso do Model Context Protocol (MCP) com um agente de IA construído com o framework Agno e alimentado pelo modelo da Groq.
 
 ## Estrutura do Projeto
