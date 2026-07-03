@@ -11,8 +11,9 @@ Um projeto Python que demonstra o uso do Model Context Protocol (MCP) com um age
 
 ## Estrutura do Projeto
 
-- `server.py`: O servidor MCP (usando FastMCP) que expõe as ferramentas para consultar coordenadas e clima via Open-Meteo.
-- `agent.py`: O agente construído com Agno que se conecta ao servidor MCP via `stdio` para responder a perguntas naturais sobre o clima.
+- `src/server.py`: O servidor MCP (usando FastMCP) que expõe as ferramentas para consultar coordenadas com suporte a múltiplos resultados e consulta de clima exata via Open-Meteo (lat/lon).
+- `src/agent.py`: O agente interativo construído com Agno que se conecta ao servidor MCP via `stdio`. Ele possui memória de sessão para conversas contínuas e capacidade de raciocínio avançado usando o modelo da Groq.
+- `main.py`: O ponto de entrada da aplicação, responsável por iniciar o assistente interativo no terminal.
 
 ## Configuração e Execução
 
@@ -36,12 +37,12 @@ Um projeto Python que demonstra o uso do Model Context Protocol (MCP) com um age
    uv sync
    ```
 
-4. **Execute o agente de demonstração:**
+4. **Execute o assistente interativo:**
    ```bash
-   uv run agent.py
+   uv run main.py
    ```
 
-Isso fará com que o agente inicie, inicie as ferramentas via MCP e responda a três perguntas pré-configuradas sobre o clima, exibindo todo o processo de chamadas de ferramentas no console.
+Isso fará com que o agente inicie um chat interativo no seu terminal. Você pode fazer perguntas complexas, consultar o clima em várias cidades pelo mundo e realizar perguntas de seguimento, com o agente utilizando as ferramentas MCP por baixo dos panos!
 
 ## Comparação com os demais protocolos
 
