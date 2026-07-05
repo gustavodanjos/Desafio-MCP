@@ -63,3 +63,7 @@ O MCP (Model Context Protocol) foi projetado de forma específica para conectar 
 - **Consumo de banda/energia:** O sistema opera em ambientes de desktop ou servidor, onde as restrições severas de bateria ou banda (que justificariam protocolos como CoAP) não existem.
 - **Confiabilidade de entrega:** O canal de comunicação direto síncrono garante retorno imediato das execuções, sem requerer a robustez de sistemas de filas com garantias de persistência de mensagens como o AMQP.
 - **Escalabilidade (de contexto):** O MCP foca na escalabilidade da integração da IA: ele oferece *descoberta dinâmica* de ferramentas e *schemas tipados*. Qualquer servidor MCP desenvolvido pode ser reutilizado integralmente por diversos outros agentes ou interfaces de IA padronizadas, alavancando a escalabilidade do sistema em termos de funcionalidades e integrações.
+
+## Histórico de entregas
+   - **Avaliação 1** (26/06/2026): commit `5d984cb`
+   - **Avaliação opcional / Semana de TCC** (03/07/2026): commit `babc6a1`
